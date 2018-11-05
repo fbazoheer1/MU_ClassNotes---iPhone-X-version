@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +16,44 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MU Class Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNU-t4-JHw">
+                                <rect key="frame" x="0.0" y="341" width="414" height="54"/>
+                                <color key="backgroundColor" red="0.79191628889999999" green="0.097507308629999997" blue="0.072977724339999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tNU-t4-JHw" secondAttribute="height" multiplier="23:3" id="Idw-oI-FQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muClassNotes_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JN3-4x-liy">
+                                <rect key="frame" x="126" y="180" width="163" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JN3-4x-liy" secondAttribute="height" multiplier="163:153" id="jV8-2J-NYc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JN3-4x-liy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="1M7-eg-DGU"/>
+                            <constraint firstItem="tNU-t4-JHw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="BoY-pU-ejz"/>
+                            <constraint firstItem="tNU-t4-JHw" firstAttribute="top" secondItem="JN3-4x-liy" secondAttribute="bottom" constant="8" symbolic="YES" id="KbC-aX-ngA"/>
+                            <constraint firstItem="JN3-4x-liy" firstAttribute="centerX" secondItem="tNU-t4-JHw" secondAttribute="centerX" id="NyH-Q1-DpT"/>
+                            <constraint firstAttribute="trailing" secondItem="tNU-t4-JHw" secondAttribute="trailing" id="QNU-f4-51s"/>
+                            <constraint firstItem="tNU-t4-JHw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jDP-IA-o16"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="muClassNotes_icon" width="1024" height="1024"/>
+    </resources>
 </document>
